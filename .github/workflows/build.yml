@@ -134,10 +134,6 @@ jobs:
                      'number_of_files_created_never_accessed': created_never_accessed_file_count, 
                      'number_files_modified_after_accessed': modified_files_after_accessed_count, 'time': total_seconds})
             os.mkdir('optimizing-ci-builds-ci-analysis')
-            step_df = pd.DataFrame(step_statistics)
-            step_df.to_csv('/home/runner/work/cucumber-java-skeleton/cucumber-java-skeleton/optimizing-ci-builds-ci-analysis/steps.csv')
-            info_df.to_csv('/home/runner/work/cucumber-java-skeleton/cucumber-java-skeleton/optimizing-ci-builds-ci-analysis/files.csv')
-      - run: cp /home/runner/inotify-logs.csv /home/runner/work/cucumber-java-skeleton/cucumber-java-skeleton/optimizing-ci-builds-ci-analysis/
       - name: Pushes analysis to another repository
         id: push_directory
         uses: cpina/github-action-push-to-another-repository@main
