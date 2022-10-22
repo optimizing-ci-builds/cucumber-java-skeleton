@@ -147,5 +147,5 @@ jobs:
           source-directory: 'optimizing-ci-builds-ci-analysis'
           destination-github-username: 'optimizing-ci-builds'
           destination-repository-name: 'ci-analyzes'
-          target-directory: 'cucumber-java-skeleton/1666402091/.github/workflows/build/build'
+          target-directory: ''
 
