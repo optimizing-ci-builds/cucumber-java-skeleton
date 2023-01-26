@@ -35,3 +35,4 @@ jobs:
       - run: grep -q "The step 'I wait 1 hour' and 1 other step(s) are undefined." gradle/build/reports/tests/test/classes/io.cucumber.skeleton.RunCucumberTest.html  || ( echo "gradle test didn't fail as expected" && false )
       - name: compare gradle and maven sources
         run: diff gradle/src maven/src
+
