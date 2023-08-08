@@ -21,8 +21,8 @@ jobs:
       # - run: inotifywait -mr /home/runner/work/cucumber-java-skeleton/cucumber-java-skeleton/ --format '%T;%w;%f;%e' --timefmt %T -o /home/runner/inotify-logs.csv & echo 'optimizing-ci-builds'
       # - run: touch starting_build_uses-checkout_14
       # - run: rm starting_build_uses-checkout_14
-      - run: python .github/workflows/inotify_script.py /home/runner/work/cucumber-java-skeleton/cucumber-java-skeleton /home/runner/inotify-logs.csv & echo 'optimizing-ci-builds'
       - uses: actions/checkout@v3
+      - run: python .github/workflows/inotify_script.py /home/runner/work/cucumber-java-skeleton/cucumber-java-skeleton /home/runner/inotify-logs.csv & echo 'optimizing-ci-builds'
       - run: touch starting_build_CachelocalMavenrepository_15
       - run: rm starting_build_CachelocalMavenrepository_15
       - name: Cache local Maven repository
