@@ -1,6 +1,6 @@
 name: Cucumber CI
 
-on:
+on: # one-run-to-find-them-all
   push:
   pull_request:
     branches:
